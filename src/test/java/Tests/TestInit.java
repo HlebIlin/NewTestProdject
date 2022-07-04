@@ -12,28 +12,27 @@ public class TestInit {
     @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
-
+        driver = new ChromeDriver();
     }
 
     @AfterMethod
-    public void finishSession(){
+    public void finishSession() {
         driver.quit();
     }
+
     public void sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
     }
-    public void fullScreen(){
+
+    public void fullScreen() {
         driver.manage().window().maximize();
     }
-    public void goToMegogo(){
+
+    public void goToMegogo() {
         driver.get("https://megogo.net/ua");
     }
-
 }

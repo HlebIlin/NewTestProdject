@@ -25,6 +25,5 @@ public class TestHomePageHeader extends TestInit{
         Assert.assertTrue(megogoHomePageHeaderWebElements.getSearchBtn().isDisplayed());
         Assert.assertTrue(megogoHomePageHeaderWebElements.getLanguageBtn().isDisplayed());
         Assert.assertTrue(megogoHomePageHeaderWebElements.getLogInBtn().isDisplayed());
-
     }
 }

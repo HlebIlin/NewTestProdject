@@ -57,11 +57,8 @@ public class MegogoHomePageHeaderWebElements extends BasePage {
     public WebElement getLanguageBtn() {
         return getElementByXpath("//a[@class='dropdown-toggle languages-toggle']");
     }
+
     public WebElement getLogInBtn() {
         return getElementByXpath("//a[@class='link-white header-auth-link jsAuthByTemplate']");
     }
-
-
-
-
 }

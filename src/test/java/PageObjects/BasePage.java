@@ -12,16 +12,18 @@ import java.util.List;
 public class BasePage {
     public WebDriver driver;
 
-    public BasePage(WebDriver driver){
-        this.driver=driver;
+    public BasePage(WebDriver driver) {
+        this.driver = driver;
     }
-    public WebElement getElementByXpath(String locator){
-        WebDriverWait wait =new WebDriverWait(driver, Duration.ofMillis(10000));
+
+    public WebElement getElementByXpath(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
         return driver.findElement(By.xpath(locator));
     }
-    public List<WebElement> getElementsByXpath(String locator){
-        WebDriverWait wait =new WebDriverWait(driver, Duration.ofMillis(10000));
+
+    public List<WebElement> getElementsByXpath(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
     }
