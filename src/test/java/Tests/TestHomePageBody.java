@@ -4,10 +4,11 @@ import PageObjects.MegogoHomePageWebElements.MegogoHomePageBodyWebElements;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestHomePageBody extends TestInit{
+public class TestHomePageBody extends TestInit {
     @Test
     public void testHomePageBody() {
         MegogoHomePageBodyWebElements megogoHomePageBodyWebElements = new MegogoHomePageBodyWebElements(driver);
+
         fullScreen();
         goToMegogo();
         Assert.assertTrue(megogoHomePageBodyWebElements.getNewsWindowBtnLeft().get(0).isDisplayed());
@@ -27,7 +28,5 @@ public class TestHomePageBody extends TestInit{
         Assert.assertTrue(megogoHomePageBodyWebElements.getTop5FilmsBtn().isDisplayed());
         Assert.assertTrue(megogoHomePageBodyWebElements.getSerialAndShowBtn().isDisplayed());
         Assert.assertTrue(megogoHomePageBodyWebElements.getCartoonBtn().isDisplayed());
-
-
     }
 }
