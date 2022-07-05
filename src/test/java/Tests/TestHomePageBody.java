@@ -5,8 +5,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestHomePageBody extends TestInit {
-    @Test
-    public void testHomePageBody() {
+
+    @Test public void testHomePageBody() {
+
         MegogoHomePageBodyWebElements megogoHomePageBodyWebElements = new MegogoHomePageBodyWebElements(driver);
 
         fullScreen();

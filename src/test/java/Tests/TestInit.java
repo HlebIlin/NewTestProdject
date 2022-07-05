@@ -35,4 +35,10 @@ public class TestInit {
     public void goToMegogo() {
         driver.get("https://megogo.net/ua");
     }
+
+    protected String getURL() {
+        return driver.getCurrentUrl();
+
+    }
+
 }
