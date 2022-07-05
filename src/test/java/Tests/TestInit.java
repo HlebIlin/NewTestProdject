@@ -27,8 +27,6 @@ public class TestInit {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public void fullScreen() {

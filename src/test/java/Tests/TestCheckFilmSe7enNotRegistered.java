@@ -1,6 +1,6 @@
 package Tests;
 
-import PageObjects.MegogoHomePageWebElements.HomePageFimsWithTitleSe7en;
+import PageObjects.MegogoHomePageWebElements.HomePageFilmsWithTitleSe7en;
 import PageObjects.MegogoHomePageWebElements.HomepageFilmSe7en;
 import PageObjects.MegogoHomePageWebElements.MegogoHomePageHeaderWebElements;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ public class TestCheckFilmSe7enNotRegistered extends TestInit {
     @Test
     public void CheckFilmSe7enNotRegistered() {
         MegogoHomePageHeaderWebElements megogoHomePageHeaderWebElements = new MegogoHomePageHeaderWebElements(driver);
-        HomePageFimsWithTitleSe7en homePageFimsWithTitleSe7en = new HomePageFimsWithTitleSe7en(driver);
+        HomePageFilmsWithTitleSe7en homePageFimsWithTitleSe7en = new HomePageFilmsWithTitleSe7en(driver);
         HomepageFilmSe7en homepageFilmSe7en = new HomepageFilmSe7en(driver);
 
         fullScreen();
