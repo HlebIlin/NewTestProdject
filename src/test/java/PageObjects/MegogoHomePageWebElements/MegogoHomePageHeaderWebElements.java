@@ -57,11 +57,104 @@ public class MegogoHomePageHeaderWebElements extends BasePage {
     public WebElement getLanguageBtn() {
         return getElementByXpath("//a[@class='dropdown-toggle languages-toggle']");
     }
+
     public WebElement getLogInBtn() {
         return getElementByXpath("//a[@class='link-white header-auth-link jsAuthByTemplate']");
     }
 
+    //SPORT SECTION
 
+    public WebElement getTennisBtn() {
+        return getElementByXpath("//span[contains(text(),'Теніс')]");
+    }
 
+    public WebElement getFootballBtn() {
+        return getElementByXpath("//span[contains(text(),'Футбол')]");
+    }
 
+    public WebElement getCombatSportBtn() {
+        return getElementByXpath("//span[contains(text(),'Єдиноборства')]");
+    }
+
+    public WebElement getMoreSportBtn() {
+        return getElementByXpath("//span[contains(text(),'Більше спорту')]");
+    }
+
+    //OTHER SECTION
+
+    public WebElement getOnlineSchoolBtn() {
+        return getElementByXpath("//li[@data-menu-id='35965']");
+    }
+
+    public WebElement getEnterPromoCodeBtn() {
+        return getElementByXpath("//span[contains(text(),'Ввести промокод')]");
+    }
+
+    public WebElement getGiftsBtn() {
+        return getElementByXpath("//span[contains(text(),'Подарунки')]");
+    }
+
+    public WebElement getAudiobooksAndPodcastsBtn() {
+        return getElementByXpath("//span[contains(text(),'Аудіокниги та подкасти')]");
+    }
+
+    public WebElement getLinkTVBtn() {
+        return getElementByXpath("//a[@href='https://megogo.net/ua/profile#profileDevices'][@class='submenu-link']");
+    }
+
+    public WebElement getAllAboutSubscriptionBtn() {
+        return getElementByXpath("//li[@data-menu-id='14841']");
+    }
+
+    public WebElement getBonusesBtn() {
+        return getElementByXpath("//li[@data-menu-id='14801']");
+    }
+
+    public WebElement getCashbackBtn() {
+        return getElementByXpath("//span[contains(text(),'Кешбек')]");
+    }
+
+    public WebElement getBeneficenceBtn() {
+        return getElementByXpath("//span[contains(text(),'Благодійність')]");
+    }
+
+    public WebElement getSubscriptionForEstablishmentsBtn() {
+        return getElementByXpath("//li[@data-menu-id='53195']");
+    }
+
+    public WebElement getMegogoSetTopBoxBtn() {
+        return getElementByXpath("//li[@data-menu-id='32625']");
+    }
+
+    public WebElement getMegogoOnDevicesBtn() {
+        return getElementByXpath("//li[@data-menu-id='14811']");
+    }
+
+    public WebElement getMoviesBySubscriptionBtn() {
+        return getElementByXpath("//li[@data-menu-id='15641']");
+    }
+
+    public WebElement getTrailersBtn() {
+        return getElementByXpath("//li[@data-menu-id='31675']");
+    }
+
+    public WebElement getDiscoveryBtn() {
+        return getElementByXpath("//li[@data-menu-id='41685']");
+    }
+
+    public WebElement getLookHowItsHeardBtn() {
+        return getElementByXpath("//li[@data-menu-id='17851']");
+    }
+
+    public WebElement getSelectionsBtn() {
+        return getElementByXpath("//li[@data-menu-id='15341']");
+    }
+
+    public WebElement getMegogoPokerBtn() {
+        return getElementByXpath("//li[@data-menu-id='38205']");
+    }
+
+    public WebElement getHBOBtn() {
+        return getElementByXpath("//li[@data-menu-id='16081']");
+    }
 }

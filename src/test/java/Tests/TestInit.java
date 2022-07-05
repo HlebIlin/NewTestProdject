@@ -13,7 +13,6 @@ public class TestInit {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-
     }
 
     @AfterMethod
