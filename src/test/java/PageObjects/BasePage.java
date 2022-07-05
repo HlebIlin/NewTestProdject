@@ -13,7 +13,7 @@ public class BasePage {
     public WebDriver driver;
 
     public BasePage(WebDriver driver){
-        this.driver=driver;
+        this.driver = driver;
     }
     public WebElement getElementByXpath(String locator){
         WebDriverWait wait =new WebDriverWait(driver, Duration.ofMillis(10000));
